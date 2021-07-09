@@ -242,11 +242,12 @@ body::-webkit-scrollbar{
       min-height: 40px;
       float:left;
       margin:2em 4em;
+      transition: background 0.5s;
   }
   .resume:hover{
       box-shadow:none;
       cursor:pointer;
-      background: rgb(232,90,79) radial-gradient(circle, transparent 1%, rgba(232,90,79,0.2) 1%) center/15000%;
+      background:  rgb(240, 106, 91) radial-gradient(circle, transparent 1%, rgb(230, 117, 105) 1%) center/15000%;
   }
   .resume:active{
     background-color: rgb(232,90,79);
@@ -316,9 +317,46 @@ body::-webkit-scrollbar{
     margin:2em;
     margin-bottom: 1em;
 }
+.proj-card:hover{
+    transform: translateY(10px);
+    transition: all .5s ease-in-out;
+    box-shadow:5px 5px 15px rgb(142,141,138);
+}
 .card-body h5{
     color:rgb(232,90,79);
 }
+.card-text{
+    opacity: 0;
+    position: absolute;
+    top:0%;
+    left:0%;
+    margin: 15px;
+    color: #fff;
+}
+.card-text:hover, .card-text:active{
+    opacity: 1;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.card:hover>#card-img-top{
+    background-image: linear-gradient(to top, #222, transparent);
+}
+.btn-primary{
+    background-color: #e85a4f;
+    border-color: #e85a4f;
+}
+.btn-primary:hover{
+    background:  rgb(240, 106, 91) radial-gradient(circle, transparent 1%, rgb(230, 117, 105) 1%) center/15000%;
+    border: none;
+}
+.btn-primary:active{
+    background-color: rgb(232,90,79);
+    background-size: 100%;
+    transition: background 0s;
+}
+
 .pro-btn{
     border-radius: 5px;
     background-color: rgb(232,90,79);
