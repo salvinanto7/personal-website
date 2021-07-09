@@ -1,10 +1,12 @@
 //parallax effect
 
 window.addEventListener('scroll',function(){
-    const parallax = document.querySelector('.parallax');
+    //const parallax = document.querySelector('.hero-section');
     let scrollPosition = window.pageYOffset;
-    //console.log(scrollPosition);
-    parallax.style.transform='translateY('+scrollPosition*0.5+'px)';
+    console.log(scrollPosition);
+    const parallax = document.getElementsByClassName('parallax');
+    //parallax.style.transform='translateY('+scrollPosition*0.5+'px)';
+    parallax.style.backgroundPositionY=scrollPosition*0.5+'px'
 })
 
 

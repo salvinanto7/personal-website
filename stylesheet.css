@@ -29,7 +29,7 @@ body::-webkit-scrollbar{
     position: -webkit-sticky;
     position: sticky;
     top:0;
-    z-index:15;
+    z-index:99;
 }
 .navbar button{
     cursor: pointer;
@@ -190,6 +190,16 @@ body::-webkit-scrollbar{
 
   /*about me*/
 
+  #about,#projects-head,#contact-me-form-head{
+    font-size: 40px;
+    font-weight:600;
+    margin: 2em;
+    margin-top: 3em;
+    text-align: center;
+}
+#about{
+    margin-top: 12em;
+}
   .about-me .container-fluid .row{
       display: flex;
       justify-content:center;
@@ -236,8 +246,13 @@ body::-webkit-scrollbar{
   .resume:hover{
       box-shadow:none;
       cursor:pointer;
+      background: rgb(232,90,79) radial-gradient(circle, transparent 1%, rgba(232,90,79,0.2) 1%) center/15000%;
   }
-
+  .resume:active{
+    background-color: rgb(232,90,79);
+    background-size: 100%;
+    transition: background 0s;
+  }
   .widget{
       margin: 0 5em;
       display: grid;
@@ -291,13 +306,7 @@ body::-webkit-scrollbar{
     margin:1em 0;
 }
 
-#about,#projects-head,#contact-me-form-head{
-    font-size: 40px;
-    font-weight:600;
-    margin: 2em;
-    margin-top: 5em;
-    text-align: center;
-}
+
 .projects{
     display:flex;
     justify-content:center;
@@ -421,7 +430,7 @@ body::-webkit-scrollbar{
     padding: 5px 0;
 }
 
-@media(max-width:500px){
+@media(max-width:700px){
     .hero .salvin{
         display: block;
         z-index: 15;
@@ -432,11 +441,11 @@ body::-webkit-scrollbar{
     }
     .salvin img{
         margin-bottom: 2em;
-        width: 200px;
+        width: 150px;
         height:auto;
     }
     .salvin .text{
-        font-size: 0.55em;
+        font-size: 0.45em;
     }
     .about-me .container-fluid .row{
         display:block;
@@ -474,7 +483,3 @@ body::-webkit-scrollbar{
         justify-content: center;
     }
 }
-
-
-
-https://www.youtube.com/watch?v=JrU6bsuNU7Y
