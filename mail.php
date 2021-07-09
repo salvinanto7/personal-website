@@ -7,10 +7,14 @@ if(isset( $_POST['message']))
 $message = $_POST['message'];
 if(isset( $_POST['subject']))
 $subject = $_POST['subject'];
-
+/*
 $content="From: $name \n Email: $email \n Message: $message";
 $recipient = "b18ec065@mace.ac.in";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
-echo "Email sent!";
+echo "Email sent!";*/
+
+if($_POST["message"]){
+    mail("b18ec065@mace.ac.in","Can i have your appointment!",$_POST[$message].$email)
+}
 ?>
