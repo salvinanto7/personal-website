@@ -16,6 +16,28 @@ $(window).on('load',function(){
     console.log("should have executed hide function");
 });
 
+// navbar color change
+$(document).ready(function(){       
+    var scroll_start = 0;
+    var startchange = $('#about');
+    var offset = startchange.offset();
+     if (startchange.length){
+    $(document).scroll(function() { 
+       scroll_start = $(this).scrollTop();
+       if(scroll_start > offset.top) {
+           $(".navbar").css('background-color', '#4b4b4b');
+           $(".navbar").css('transition', '0.4s','ease-in-out');
+           $(".navbar").css('background', 'rgb(240, 106, 91)','linear-gradient(to right, transparent 1%, rgb(230, 117, 105) 1%) center/15000%;');
+           $("#logo-text").css('border','none');
+        } else {
+           $('.navbar').css('background-color', 'transparent');
+           $("#logo-text").css('border-top','1px solid #fff');
+           $("#logo-text").css('border-bottom','1px solid #fff');
+        }
+    });
+     }
+ });
+
 //type write effect
 
 const textArray=["an IOT Enthusiast", "a Web Developer", "a Designer"];
