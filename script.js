@@ -1,13 +1,24 @@
 //parallax effect
 
-window.addEventListener('scroll',function(){
-    //const parallax = document.querySelector('.hero-section');
-    let scrollPosition = window.pageYOffset;
-    console.log(scrollPosition);
-    const parallax = document.getElementsByClassName('parallax');
-    //parallax.style.transform='translateY('+scrollPosition*0.5+'px)';
-    parallax.style.backgroundPositionY=scrollPosition*0.5+'px'
-})
+//window.addEventListener('scroll',function(){
+//    //const parallax = document.querySelector('.hero-section');
+//    let scrollPosition = window.pageYOffset;
+//    console.log(scrollPosition);
+//    const parallax = document.getElementsByClassName('parallax');
+//    //parallax.style.transform='translateY('+scrollPosition*0.5+'px)';
+//    parallax.style.backgroundPositionY=scrollPosition*0.5+'px'
+//})
+
+//preloader
+$(document).ready(function(){
+    const preload=document.getElementsByClassName("loader-wrapper");
+    console.log("entered ready !")
+    $(window).on('load',function(){
+        console.log("entered onload!")
+        preload.hide();
+        console.log("should have executed hide function");
+    });
+});
 
 //type write effect
 
