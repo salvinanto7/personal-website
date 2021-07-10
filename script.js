@@ -1,5 +1,5 @@
 //parallax effect
-
+/*
 window.addEventListener('scroll',function(){
     //const parallax = document.querySelector('.hero-section');
     let scrollPosition = window.pageYOffset;
@@ -8,8 +8,11 @@ window.addEventListener('scroll',function(){
     //parallax.style.transform='translateY('+scrollPosition*0.5+'px)';
     parallax.style.backgroundPositionY=scrollPosition*0.5+'px'
 })
-
-
+*/
+// navbar color change on scrol efect
+$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
 //type write effect
 
 const textArray=["an IOT Enthusiast", "a Web Developer", "a Designer"];
