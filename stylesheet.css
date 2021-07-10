@@ -37,6 +37,7 @@ body::-webkit-scrollbar{
 .navbar a{
     color:white;
     font-size: large;
+    font-weight: 500;
     cursor: pointer;
 }
 .nav-link{
@@ -54,8 +55,10 @@ body::-webkit-scrollbar{
     transition: all 500ms ease;
 }*/
 .nav-link:hover,.nav-link:focus{
-    background-image: linear-gradient(to right, #e98074  0%, #e85a4f);
+    background-image: linear-gradient(to right, rgb(255, 198, 118)  0%, rgb(255, 171, 55));
     background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     -webkit-text-fill-color:transparent;
     transition: ease .5s;
 }
@@ -436,8 +439,21 @@ body::-webkit-scrollbar{
     min-height: 40px;
     float:right;
     margin:1em 6em;
+    transition: background 0.5s;
+    cursor:pointer;
 }
 
+.pro-btn:hover{
+    box-shadow:none;
+    cursor:pointer;
+    background:  rgb(240, 106, 91) radial-gradient(circle, transparent 1%, rgb(230, 117, 105) 1%) center/15000%;
+}
+.pro-btn:active{
+  background-color: rgb(232,90,79);
+  background-size: 100%;
+  transition: background 0s;
+}
+/*
 #contact-card{
     border: none;
 }
@@ -501,16 +517,22 @@ body::-webkit-scrollbar{
     color: #fff;
     background-color: rgb(232,90,79);
     border-color: rgb(232,90,79);
-}
+}*/
 
 .footer{
     background-color: #4b4b4b;
-    bottom: 0;
+    bottom: 0%;
     height: auto;
-    min-height: 150px;
+    min-height: 240px;
     display: block;
+    width: 100%;
+    margin-top: 10em;
 }
-
+.footer h3{
+    text-align: center;
+    font-size:x-large;
+    padding-top: 2em;
+}
 .footer ul{
     display: flex;
     justify-content:center;
@@ -518,9 +540,10 @@ body::-webkit-scrollbar{
     color:white;
     text-decoration: none;
     list-style: none;
+    width: 100%;
 }
 .footer ul li{
-    margin: 3em 1em;
+    margin: 2em 1em;
     margin-bottom:1em;
 }
 

@@ -27,7 +27,7 @@ $(document).ready(function(){
        if(scroll_start > offset.top) {
            $(".navbar").css('background-color', '#4b4b4b');
            $(".navbar").css('transition', '0.4s','ease-in-out');
-           $(".navbar").css('background', 'rgb(240, 106, 91)','linear-gradient(to right, transparent 1%, rgb(230, 117, 105) 1%) center/15000%;');
+           $(".navbar").css('background', 'rgba(240, 106, 91,0.85) linear-gradient(to right, transparent 1%, rgb(230, 117, 105) 1%) center/15000%');
            $("#logo-text").css('border','none');
         } else {
            $('.navbar').css('background-color', 'transparent');
