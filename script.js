@@ -10,14 +10,10 @@
 //})
 
 //preloader
-$(document).ready(function(){
-    const preload=document.getElementsByClassName("loader-wrapper");
-    console.log("entered ready !")
-    $(window).on('load',function(){
-        console.log("entered onload!")
-        preload.hide();
-        console.log("should have executed hide function");
-    });
+$(window).on('load',function(){
+    console.log("entered onload!")
+    $(".loader-wrapper").hide();
+    console.log("should have executed hide function");
 });
 
 //type write effect
