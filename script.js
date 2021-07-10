@@ -13,6 +13,13 @@ window.addEventListener('scroll',function(){
 $(window).scroll(function(){
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
+
+
+//preloader effect
+loader=document.getElementsByClassName("loader-wrapper")
+window.on("load",function(){
+    loader.fadeout("slow");
+});
 //type write effect
 
 const textArray=["an IOT Enthusiast", "a Web Developer", "a Designer"];
