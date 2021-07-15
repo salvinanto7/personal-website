@@ -454,6 +454,9 @@ body::-webkit-scrollbar{
   background-size: 100%;
   transition: background 0s;
 }
+.extra-project{
+    margin-top:5em;
+}
 /*
 #contact-card{
     border: none;

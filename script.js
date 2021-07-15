@@ -41,8 +41,8 @@ $(document).ready(function(){
 //type write effect
 
 const textArray=["an IOT Enthusiast", "a Web Developer", "a Designer"];
-const typingDelay=200;
-const erasingDelay=100;
+const typingDelay=100;
+const erasingDelay=70;
 const nextTextDelay=2000;
 
 let textArrayIndex = 0;
@@ -81,3 +81,10 @@ document.addEventListener("DOMContentLoaded",function(){
 });
 
 
+// show more button action
+
+const showmore = document.getElementsByClassName("pro-btn");
+const extra = document.getElementsByClassName("extra-project");
+showmore.addEventListener('click',function(){
+    extra.style.display='none';
+});
