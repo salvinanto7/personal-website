@@ -71,7 +71,6 @@ body::-webkit-scrollbar{
     padding: 5px;
     border-top:1px solid #fff;
     border-bottom:1px solid #fff;
-    border
 }
 
 #loader {
@@ -386,15 +385,17 @@ body::-webkit-scrollbar{
 }
 .proj-card{
     margin:2em;
-    margin-bottom: 1em;
 }
+
 .proj-card:hover{
     transform: translateY(10px);
     transition: all .5s ease-in-out;
     box-shadow:5px 5px 15px rgb(142,141,138);
 }
+
 .card-body h5{
     color:rgb(232,90,79);
+    display: block;
 }
 .card-text{
     opacity: 0;
@@ -411,9 +412,7 @@ body::-webkit-scrollbar{
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
-.card:hover>#card-img-top{
-    background-image: linear-gradient(to top, #222, transparent);
-}
+
 .btn-primary{
     background-color: #e85a4f;
     border-color: #e85a4f;
@@ -456,6 +455,18 @@ body::-webkit-scrollbar{
 }
 .extra-project{
     margin-top:5em;
+    display: none;
+    transition: opacity 1.5s;
+}
+
+.details{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.details a{
+    margin:5%;
+    color:#fc6e63;
 }
 /*
 #contact-card{

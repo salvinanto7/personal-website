@@ -83,8 +83,14 @@ document.addEventListener("DOMContentLoaded",function(){
 
 // show more button action
 
-const showmore = document.getElementsByClassName("pro-btn");
-const extra = document.getElementsByClassName("extra-project");
-showmore.addEventListener('click',function(){
-    extra.style.display='none';
-});
+function ShowAndHide() {
+    var y=document.querySelector('.pro-btn');
+    var x = document.querySelector('.extra-project');
+    if (x.style.display == 'none' || x.style.display === "") {
+        x.style.display = 'block';
+        y.innerHTML='<< See Less';
+    } else {
+        x.style.display = 'none';
+        y.innerHTML='See More >>';
+    }
+}
