@@ -39,16 +39,16 @@ $(document).ready(function(){
  });
 
 // arrow effect 
-function opac(){
-    arrow.style.opacity='1';
-    setTimeout(funtion() {
-
-    },1000);
-    arrow.style.opacity='0';
-    setTimeout(funtion(){
-
-    },1000);
-}
+//function opac(){
+//    arrow.style.opacity='1';
+//    setTimeout(funtion() {
+//
+//    },1000);
+//    arrow.style.opacity='0';
+//    setTimeout(funtion(){
+//
+//    },1000);
+//}
 const arrow=document.querySelector(".fa-angle-double-down");
 
 //type write effect
