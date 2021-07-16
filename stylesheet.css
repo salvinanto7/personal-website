@@ -191,6 +191,7 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     z-index: 10;
+    text-align: center;
 }
 .description{
     display: flex;
@@ -212,6 +213,7 @@ body::-webkit-scrollbar{
     margin-left: .1em;
     animation:blink 1s infinite;
 }
+
 /*
 .dynamic-text li{
     list-style: none;
@@ -468,6 +470,11 @@ body::-webkit-scrollbar{
     margin:5%;
     color:#fc6e63;
 }
+
+.fa-angle-double-down{
+    color:#e85a4f;
+    font-size:2rem;
+}
 /*
 #contact-card{
     border: none;
@@ -609,6 +616,9 @@ body::-webkit-scrollbar{
     .skill img{
         width:5em;
     }
+    .fa-angle-double-down{
+        margin-top:30%;
+    }
 }
 
 @media(max-width:1500px){
@@ -646,6 +656,9 @@ body::-webkit-scrollbar{
     }
     .skill img{
         width:4.5em;
+    }
+    .fa-angle-double-down{
+        margin-top:30%;
     }
 }
 
@@ -701,6 +714,9 @@ body::-webkit-scrollbar{
         margin: 1em;
         justify-content: center;
     }
+    .fa-angle-double-down{
+        margin-top:30%;
+    }
 }
 
 @media(max-width:700px){
@@ -754,5 +770,8 @@ body::-webkit-scrollbar{
     .pro-btn{
         margin: 1em;
         justify-content: center;
+    }
+    .fa-angle-double-down{
+        margin-top:30%;
     }
 }
